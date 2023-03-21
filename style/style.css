@@ -1,0 +1,389 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Roboto;
+}
+nav.wrapper{
+    position: fixed;
+    width: 100%;    
+    background-color: white;
+    top: 0;
+    z-index: 100;
+}
+.wrapper{
+    max-width: 1760px;
+    margin: 0 auto;
+}
+
+.header{
+   
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.subheader{
+    font-size: 24px;
+}
+
+.bread_crumbs{
+    margin: 30px auto;
+    color: #C4C4C4;
+}
+
+.bread_crumbs .active{
+    color: #6B7073;
+}
+
+.search form{
+    display: grid;
+    grid-template-columns: 1fr 20px;
+    box-shadow: 2px 4px 11px rgba(0, 0, 0, 0.17);
+    height: 40px;
+    width: 230px;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.search input{
+    border: none;
+    height: 100%;
+}
+
+.search input:focus{
+    outline: none;
+}
+
+.search button{
+    background-color: transparent;
+    border: none;
+    color: #6B7073;
+    cursor: pointer;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 26px rgba(0, 0, 0, 0.09);
+    padding: 0 20px;
+}
+
+nav .list{
+    display: flex;
+    gap: 40px;
+    color: #6B7073;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .work_time{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+nav .work_time .time{
+    display: flex;
+    flex-direction: column;
+}
+
+
+nav .nav_btn button{
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    color: #CD3B31;
+    cursor: pointer;
+}
+
+#rent{
+    display: grid;
+    grid-template-columns: 1fr 600px;
+    gap: 30px;
+}
+
+#rent img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#rent .info{
+    display: grid;
+    gap: 20px;
+}
+
+#rent .info .presentation{
+    font-size: 24px;
+    font-weight: 400;
+    color: #151516;
+    text-decoration: none;
+}
+
+#rent .advantages{
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.wrapper ul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#rent .advantages li::marker{
+    color: #CD3B31;
+    font-size: 20px;
+}
+
+#rent .presentation{
+    margin-bottom: 65px;
+}
+
+#pavilions{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+
+#pavilions .shops_info{
+    margin-bottom: 80px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1000px 1fr;
+}
+
+#pavilions .slider{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#pavilions .slider .screen{
+    position: relative;
+    height: 150px;
+    overflow: hidden;
+}
+
+#pavilions .slider .line{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: grid;
+    grid-auto-columns: 350px;
+    grid-auto-flow: column;
+    transition: left 0.5s ease;
+}
+#pavilions .slider .line img{
+    width: 300px;
+}
+
+#pavilions .slider .trigger_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#pavilions .slider .trigger_container button{
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+}
+
+#pavilions .slider .dots{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    list-style: none;
+}
+
+#pavilions .slider .dots li{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: rgba(107, 112, 115, 0.5);
+}
+#pavilions .slider .dots li.active{
+    background-color: #6B7073;
+    width: 10px;
+    height: 10px;
+}
+
+#pavilions .info{
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#pavilions .info li::marker{
+    color: #CD3B31;
+    font-size: 20px;
+}
+
+#pavilions .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+}
+
+#pavilions .description .title{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    width: 150px;
+}
+
+#pavilions .description .value{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+#pavilions .photos{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 60px 30px;
+}
+
+#pavilions .photos img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 1px 44px rgba(0, 0, 0, 0.12);
+    padding: 20px;
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer .contact{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+footer .social_network{
+    display: flex;
+    gap: 10px;
+}
+
+footer .social_network a{
+    width: 40px;
+    height: 40px;
+    background-color: #E4E4E4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6B7073;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+@media (max-width: 1480px) {
+    #pavilions .shops_info{
+        grid-template-columns: auto;
+    }
+    #pavilions .shops_info .screen{
+        width: 1000px;
+        margin: 0 auto;
+    }
+    
+}
+
+@media (max-width: 1000px) {
+    #rent{
+        grid-template-columns: auto;
+        grid-template-rows: 300px auto;
+    }
+
+    #pavilions .slider{
+        display: none;
+    }   
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer img{
+        max-width: 200px;
+    }
+
+    footer .social_network{
+        justify-content: center;
+    }
+
+    nav .list li:not(.work_time,.nav_btn){
+        display: none;
+    }
+    nav .list li .watch{
+        display: none;
+    }
+    nav .work_time{
+        display: flex;
+        margin-left: 10px;
+        
+
+    }
+    nav .work_time .time{
+        
+       
+        text-align:center;
+        margin-left: 5px;
+        
+        
+        
+    }
+}
+
+@media (max-width: 700px) {
+    #pavilions .photos{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 420px) {
+    #pavilions .description{
+        text-align: center;
+    }
+
+    #pavilions .description .title{
+        width: auto;
+    }
+    
+    #pavilions .photos{
+        grid-template-columns: auto;
+    }
+
+    #pavilions .photos img{
+       display: none;
+    }
+    #pavilions .photos img:last-child{
+        display: block;
+     }
+
+    .header{
+        font-size: 20px;
+    }
+}
+
